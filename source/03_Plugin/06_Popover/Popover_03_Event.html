@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>实例 - 弹出框(Popover)方法</title>
+    <link href="../../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../../../jquery/jquery-1.11.1.min.js"></script>
+    <script src="../../../bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container" style="padding: 100px 50px 10px;">
+        <button type="button" class="btn btn-default popover-show" title="Popover title" data-container="body"
+                data-toggle="popover" data-placement="left" data-content="左侧Popover 中的一些内容 -- show方法">
+            左侧的 Popover -- show</button>
+
+        <script>
+            $(function() {
+                $('.popover-show').popover('show');
+                $('.popover-show').on('shown.bs.popover', function() {
+                    alert('显示警告信息!');
+                });
+            });
+        </script>
+    </div>
+
+</body>
+</html>

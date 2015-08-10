@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>实例 - 输入框组的大小</title>
+    <link href="../../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../../../jquery/jquery-1.11.1.min.js"></script>
+    <script src="../../../bootstrap/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<h3>您可以通过向 .input-group 添加相对表单大小的 class（比如 .input-group-lg、input-group-sm、input-group-xs）来改变输入框组的大小。输入框中的内容会自动调整大小。</h3>
+<div style="padding: 100px 100px 10px;">
+    <form class="bs-example bs-example-form" role="form">
+        <div class="input-group input-group-lg">
+            <span class="input-group-addon">@</span>
+            <input type="text" class="form-control" placeholder="twitterhandler">
+        </div>
+        <br>
+
+        <div class="input-group">
+            <input type="text" class="form-control">
+            <span class="input-group-addon">.00</span>
+        </div>
+        <br>
+
+        <div class="input-group input-group-sm">
+            <span class="input-group-addon">$</span>
+            <input type="text" class="form-control">
+            <span class="input-group-addon">.00</span>
+        </div>
+    </form>
+</div>
+</body>
+</html>

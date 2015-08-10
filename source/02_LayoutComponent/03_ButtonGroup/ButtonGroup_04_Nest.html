@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>实例 - 嵌套的按钮组</title>
+    <link href="../../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../../../jquery/jquery-1.11.1.min.js"></script>
+    <script src="../../../bootstrap/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<h3>您可以在一个按钮组内嵌套另一个按钮组, 即, 在一个.btn-group内嵌套另一个.btn-group. </h3>
+<h3>当您想让下拉菜单与一系列按钮组合使用时, 就会用到这个. </h3>
+<div class="btn-group">
+    <button type="button" class="btn btn-default">按钮1</button>
+    <button type="button" class="btn btn-default">按钮2</button>
+
+    <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            下拉
+            <span class="caret"></span>
+        </button>
+
+        <ul class="dropdown-menu">
+            <li><a href="#">下拉连接1</a></li>
+            <li><a href="#">下拉连接2</a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
